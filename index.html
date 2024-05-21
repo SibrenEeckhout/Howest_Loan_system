@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/init.js"></script>
+</head>
+<body>
+    <header>
+        <img id="howestLogo" src="./assets/Images/howest.png" alt="logo">
+    </header>
+    <h1>Uitleensysteem</h1>
+    <div id="container">
+        <aside>
+            <h3>Filters</h3>
+            <div class="filter"> 
+                <h4>Zoek op naam:</h4>
+                <label for="filterOnName"></label>
+                <input type="text" placeholder="Type name of item..." id="filterOnName">
+                <div id="filterDate" class="hidden">
+                    <h4>Filter op datum:</h4>
+                    <label for="filterOnDateBegin">Begin:</label>
+                    <input type="date" id="filterOnDateBegin">
+                    <label for="filterOnDateEnd">Eind:</label>
+                    <input type="date" id="filterOnDateEnd">
+                </div>
+            </div> 
+        </aside>
+    
+        <section id="items">
+        </section>
+    
+    </div>
+    
+    <div class="hidden" id="form">
+        <form action="#">
+            <h2></h2>
+            <label for="dateUitlenen">Datum uitlenen</label>
+            <input type="date" id="dateUitlenen">
+            <label for="dateTerugbrengen" >Datum terugbrengen</label>
+            <input type="date" id="dateTerugbrengen">
+            <label for="count">hoeveel</label>
+            <input type="number" id="count">
+            <p><span>Beschrijving: </span>Lorem ipsum is een opvultekst die drukkers, zetters, grafisch ontwerpers en dergelijken gebruiken om te kijken hoe een opmaak er grafisch uitziet. De eerste woorden van de tekst luiden doorgaans Lorem ipsum dolor sit amet, consectetur adipiscing
+            </p>
+            <label for="name" >name</label>
+            <input type="text" id="name">
+            <label for="email"  >email</label>
+            <input type="email" id="email">
+            <label for="phone"  >phone</label>
+            <input type="text" id="phone">
+            <button id="submit" type="submit">Submit</button>
+            <button id="cancel" type="submit">Cancel</button>
+        </form>
+    </div>
+
+
+    <template class="template">
+        <article>
+            <div class="first">
+
+            </div>
+            <h2 class="name"></h2>
+
+                <p id="amount_of_items"></p>
+        </article>
+    </template>
+
+    <div class="error-popup" id="errorPopup"></div>
+<div class="valid-popup" id="validPopup"></div>
+</body>
+</html>
+
+

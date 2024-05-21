@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* OVERALL */
+button {
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+body{
+    font-family: 'montserrat', sans-serif;
+}
+
+main{
+   
+}
+
+.hidden{
+    display: none;
+}
+
+input[type=file]{
+    border: none;
+    padding: 0.5rem;
+    border-radius: 40px;
+    background-color: white;
+}
+
+h2{
+    font-weight: bold;
+    font-size: 2.5rem;
+    padding: 2rem 0rem 0rem 2rem;
+}
+
+h3{
+    font-size: 1.75rem;
+    font-weight: bold;
+    padding: 0.75rem;
+}
+
+/* HEADER */
+
+header{
+    height: 7rem;
+    background-color: #44C8F5;
+    text-align: center;
+}
+
+header img{
+    height: 7rem;
+}
+
+header h2 {
+    padding-top: 1rem;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/* LOGIN */
+
+#login{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 15rem auto auto;
+}
+
+#login input{
+    appearance: none;
+    border: none;
+    width: 20rem;
+    background-color: #d3d3d3;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin: 0.3rem auto 0.3rem auto;
+}
+
+#login button{
+    width: 21rem;
+    border: none;
+    background-color: #44C8F5;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin: 0.3rem auto 0.3rem auto;
+}
+
+/* DASHBOARD */
+
+#dashboard {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 2rem 0rem 2rem;
+    height: auto;
+}
+
+#dashboardTwo {
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 2rem 2rem 2rem;;
+}
+
+
+/* RESERVATIONS */
+
+#PotentialReservations {
+    padding: 0.5rem;
+    width: 35%;
+    height: 32rem;
+    background-color: #F2F2F2;
+    border-radius: 40px;
+}
+
+#PotentialReservations ul{
+    overflow: scroll;
+    height: 27rem;
+    border-radius: 35px;
+    overflow-y: scroll;
+}
+
+#PotentialReservations article{
+    position: relative;
+    padding: 0.75rem;
+    margin: 0.5rem;
+    margin-bottom: 0.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #E2E2E2;
+    border-radius: 40px;
+}
+
+#PotentialReservations article h4{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-left: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0.2rem;
+}
+
+#PotentialReservations article p{
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    padding: 0.6rem;
+    margin-bottom: 0.5rem;
+    width: 15rem;
+    border-radius: 1rem;
+    background-color: #F2F2F2;
+}
+
+#PotentialReservations article p:first-of-type{
+    background-image: url("../../assets/Images/calendar.png");
+    background-size: 1rem;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 0.7rem) center;
+}
+
+#PotentialReservations article div:last-of-type{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#PotentialReservations article div button{
+    font-family: 'montserrat';
+    width: 12rem;
+    height: 100%;
+    margin: 0.35rem;
+    border: none;
+    border-radius: 40px;
+    font-size: 1rem;
+}
+
+#PotentialReservations article div .cancel{
+    background-color: rgb(252, 55, 55);
+    transition-duration: 300ms;
+}
+
+#PotentialReservations article div .accept{
+    background-color: #0fbc0f;
+    transition-duration: 300ms;
+}
+
+#PotentialReservations article div .cancel:hover{
+    cursor: pointer;
+    background-color: #44C8F5;
+}
+
+#PotentialReservations article div .accept:hover{
+    cursor: pointer;
+    background-color: #44C8F5;
+}
+
+#reservationsContainer ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#reservationsContainer ul li {
+    margin: 0.1rem;
+}
+
+
+/* ADD ITEM */
+
+#addMaterial{
+    padding: 0.75rem;
+    width: 49.5%;
+    background-color: #F2F2F2;
+    border-radius: 40px;
+}
+
+#addMaterial form{
+    display: flex;
+    flex-direction: column;
+    padding: 0.75rem;
+}
+
+label#amount{
+    margin-left: 1.5rem;
+}
+#addMaterial input#amount{
+    width: 40%;
+}
+
+#addMaterial input#img{
+    width: auto;
+}
+/* RESERVATIONS */
+
+#reservations {
+    width: 40%;
+    height: 32rem;
+    background-color: #F2F2F2;
+    padding: 0.5rem;
+    border-radius: 40px;
+}
+
+
+#reservations div#reservationsContainer{
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 27rem;
+
+    border-radius: 35px;
+    overflow-y: scroll;
+}
+
+#reservations article{
+    background-color: #E2E2E2;
+    padding: 0.75rem;
+    width: 20rem;
+    margin-bottom: 1rem;
+    border-radius: 20px;
+}
+
+#reservations article p{
+    padding-bottom: 0.5rem;
+}
+
+#reservations article h4{
+    font-weight: bold;
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+/* UPDATE MATERIAL */
+
+#updateMaterial{
+    background-color: #F2F2F2;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+
+#updateMaterial #filterOnName {
+    appearance: none;
+    border: none;
+    width: 35%;
+    background-color: #d3d3d3;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin: 1rem;
+    background-image: url("../../assets/Images/glass.png");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 1rem) center; /* Move 1rem to the left */
+    background-size: 1rem;
+}
+
+#updateMaterial ul{
+    height: 30rem;
+    overflow: scroll;
+}
+
+#updateMaterial ul li {
+    margin-bottom: 1rem;
+}
+
+#updateMaterial img{
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    object-fit: cover;
+}
+
+#updateMaterial .img{
+    width: 15rem;
+    height: 15rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#updateMaterial form{
+    display: flex;
+    justify-content: space-around;
+}
+
+#updateMaterial .second{
+    display: flex;
+    flex-direction: column;
+}
+
+#updateMaterial .second input{
+    appearance: none;
+    border: none;
+    width: 80%;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin: 1rem;
+
+}
+
+#updateMaterial .img input{
+    appearance: none;
+    border: none;
+    width: 80%;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin: 1rem;
+}
+
+#updateMaterial .second textarea{
+    appearance: none;
+    border: none;
+    width: 80%;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin: 1rem;
+}
+
+#updateMaterial .second div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 1rem 2rem 1rem 1rem;
+}
+
+#updateMaterial .second div button{
+    height: 2rem;
+    margin: 1rem;
+    width: 5rem;
+    border: none;
+    border-radius: 1rem;
+}
+
+#updateMaterial .second div input{
+    width: 25%;
+}
+
+#updateMaterial .second div button:first-of-type{
+    background-color: red;
+}
+
+#updateMaterial .second div button:last-of-type{
+    background-color: #44C8F5;
+}
+
+
+
+
+
+
+
+
+
+form {
+    border-radius: 30px;
+    height: 15rem;
+}
+
+.addImage, #addMaterial form div{
+    display: flex;
+    align-items: baseline;
+    margin-top: 0.75rem;
+}
+
+#addMaterial form div{
+    justify-content: space-between;
+}
+
+#addMaterial label {
+    display: block;
+    margin-top: 10px;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+
+#addMaterial label#qtInStock{
+    margin-left: 1.5rem;
+}
+
+#addMaterial input[type="text"],
+#addMaterial input[type="number"],
+#addMaterial textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    margin-bottom: 0.5rem;
+    margin-top: 5px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+}
+
+#addMaterial textarea{
+    height: 20rem;
+}
+
+#addMaterial input[type="number"]#qtInStock{
+    width: 5rem;
+}
+
+#addMaterial #nameAndQt{
+    display: flex;
+    align-items: baseline;
+}
+
+#addMaterial #materialButtons{
+    display: flex;
+    justify-content: space-between;
+}
+
+#addMaterial button#delete{
+    background-color: #FC3737;
+}
+
+#addMaterial input[type="submit"], #delete, #addMaterial button {
+    background-color: #44C8F5;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    border-radius: 40px;
+    padding: 0.75rem;
+    width: 49%;
+    cursor: pointer;
+
+    margin-top: 1rem;
+}
+
+
+.error-popup {
+    background-color: #ff3333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    display: none;
+}
+
+.valid-popup {
+    background-color: #33ff5f;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    display: none;
+}

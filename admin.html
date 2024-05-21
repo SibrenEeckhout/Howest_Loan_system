@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>admin</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+    <link rel="stylesheet" href="assets/css/calender.css">
+    <link rel="stylesheet" href="assets/css/toggleSwitch.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
+    <script src="assets/js/calendarDates.js" defer></script>
+    <script src="assets/js/event-handler.js" defer></script>
+    <script src="assets/js/calender.js" defer></script>
+    <script src="assets/js/admin.js" defer></script>
+    
+</head>
+<body>
+<header>
+    <img id="howestLogo" src="./assets/Images/howest.png" alt="logo">
+</header>
+
+<h2>Dashboard</h2>
+
+<div class="" id="loginForm" >
+    <form action="" id="login" class="">
+        <label for="name"></label>
+        <input type="email" placeholder="Gebruikersnaam" id="name">
+        <label for="password"></label>
+        <input type="text" placeholder="Wachtwoord" id="password">
+        <label for="submit"></label>
+        <button id="submit" type="submit">Submit</button>
+    </form>
+</div>
+
+<section id="dashboard">
+    <section id="PotentialReservations" class="hidden">
+        <h3>Reservaties</h3>
+        <ul>
+            <li>
+        </ul>
+    </section>
+
+    <div id="calendar" class="hidden"></div>
+
+    <section id="reservations" class="hidden">
+        <h3>Overzicht reservaties</h3>
+        <div id="reservationsContainer">
+            <ul>
+                
+            </ul>
+            
+    </div>
+    </section>
+
+    
+</section>
+
+<section id="dashboardTwo">
+
+    <section id="updateMaterial" class="hidden">
+            <h3>Materiaal bewerken</h3>
+            <label for="filterOnName"></label>
+            <input type="text" placeholder="Type name of item..." id="filterOnName">
+            <ul id="updateList">
+            </ul>
+    </section>
+
+    <section id="addMaterial" class="hidden">
+        <h3>Materiaal</h3>
+        <form action="" >
+                <div>
+                    <label for="itemName" class="hidden"></label>
+                    <input type="text"  id="itemName" placeholder="Item name ...">
+                    <label for="amount" class="hidden" ></label>
+                    <input type="number"  id="amount" placeholder="qt.">
+                </div>
+                <label for="description"></label>
+                <textarea name="" id="description" cols="30" rows="100"></textarea>
+                <div>
+                    <input type="file" id="img" name="img">
+                    <button type="submit" >Toevoegen</button>
+                </div>
+        </form>
+    </section>
+</section>
+
+</main>
+<div class="error-popup" id="errorPopup"></div>
+<div class="valid-popup" id="validPopup"></div>
+</body>
+</html>
